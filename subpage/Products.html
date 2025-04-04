@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Prod.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-section">
+            <a href="../index.html" class="logo-link">
+                <img src="../img/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <h2>Wiseman Point of Sale</h2>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Help</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../img/logo.jpg" alt="product.name" class="product-image" style="width: 200px; height: 200px; object-fit: cover;">
+                <h3 class="product-title">TITLE</h3>
+                <p class="product-description">description</p>
+                <p class="product-rating">Rating: 5/5</p>
+                <p class="product-price">Price: 500</p>
+                <a href="#LINK HERE" class="add-to-cart" style="text-decoration: none;">Click to view</a>
+            </div>
+            <div class="product-card">
+                <img src="../img/logo.jpg" alt="product.name" class="product-image" style="width: 200px; height: 200px; object-fit: cover;">
+                <h3 class="product-title">TITLE 2</h3>
+                <p class="product-description">Another description</p>
+                <p class="product-rating">Rating: 4.5/5</p>
+                <p class="product-price">Price: 700</p>
+                <a href="#LINK HERE" class="add-to-cart" style="text-decoration: none;">Click to view</a>
+            </div>
+            <div class="product-card">
+                <img src="../img/logo.jpg" alt="product.name" class="product-image" style="width: 200px; height: 200px; object-fit: cover;">
+                <h3 class="product-title">TITLE 3</h3>
+                <p class="product-description">Yet another description</p>
+                <p class="product-rating">Rating: 4/5</p>
+                <p class="product-price">Price: 300</p>
+                <a href="#LINK HERE" class="add-to-cart" style="text-decoration: none;">Click to view</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin: 10px;
+            color: #333;
+        }
+
+        .product-description,
+        .product-rating,
+        .product-price {
+            margin: 0 10px 10px;
+            color: #555;
+        }
+
+        .add-to-cart {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #0056b3;
+        }
+    </style>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

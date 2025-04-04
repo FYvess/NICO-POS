@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-section">
+            <a href="../login.html" class="logo-link">
+                <img src="../img/logo.jpg" alt="Logo" class="logo">
+            </a>
+            <h2>Wiseman Point of Sale</h2>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Help.html">Help</a>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="help-section" style="margin-top: 100px;">
+            <h1 class="help-title">Client Help Guide</h1>
+            <div class="faq">
+                <h2 class="faq-title">1. Logging In</h2>
+                <div class="faq-content">
+                    <p>To access your account, go to the login page and enter your username and password. If you encounter any issues, please contact support.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 class="faq-title">2. Viewing Products</h2>
+                <div class="faq-content">
+                    <p>Navigate to the "Products" page to browse available items. Use the search bar or filters to find specific products quickly.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 class="faq-title">3. Placing an Order</h2>
+                <div class="faq-content">
+                    <p>Select the products you wish to purchase, add them to your cart, and proceed to checkout. Follow the on-screen instructions to complete your order.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 class="faq-title">4. Contacting Support</h2>
+                <div class="faq-content">
+                    <p>If you need assistance, visit the "Support" page to submit a query or contact our customer service team directly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+
+                // Toggle the 'active' class on the content
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
